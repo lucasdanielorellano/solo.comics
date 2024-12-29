@@ -3,199 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talento | PetShop tienda de mascotas</title>
+    <title>Solo Cómics | Mundo de Historietas</title>
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/x-icon.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <a href="#">
-            <img class="logo" src="./assets/img/logo.png" alt="Logo Tienda de mascotas">
+            <img class="logo" src="./assets/img/solocomics.webp" alt="Logo Solo Cómics">
         </a>
         <nav class="navHeader">
             <ul class="ulHeader">
-                <li class="listaItem"><a class="linkHeader" href="#">Inicio</a></li>
-                <li class="listaItem"><a class="linkHeader" href="./pages/productos.html">Productos</a></li>
-                <li class="listaItem"><a class="linkHeader" href="./pages/contacto.html">Contacto</a></li>
+                <li class="listaItem"><a class="linkHeader" href="#inicio">Inicio</a></li>
+                <li class="listaItem"><a class="linkHeader" href="#colecciones">Colecciones</a></li>
                 <li class="listaItem"><a class="linkHeader" href="#nosotros">Nosotros</a></li>
+                <li class="listaItem"><a class="linkHeader" href="./pages/contacto.html">Contacto</a></li>
                 <li class="listaItem"><a class="linkHeader" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
+ 
     </header>
     <main>
-        <!--IMAGEN DE FONDO-->
-       <section class="principalIndex">
-           <h1>Talento: Calidad y amor para tu compañero fiel</h1>
-           <div class="contenedorTextoPrincipalIndex">
-                <p>
-                    Disfruta nuestro catálogo de mascotas con las mejores calidades y amor para que tu compañero se sienta feliz y seguro.
-                </p>
-                <a href="./pages/productos.html">PRODUCTOS</a>
+        <section id="inicio" class="inicio"></section>
+        <section class="principalIndex">
+            <h1>Bienvenidos al Mundo del Cómic</h1>
+          
+            <div class="contenedorTextoPrincipalIndex">
+                <p>Explorá nuestras colecciones de cómics, figuras coleccionables y más.</p>
+                <a href="#colecciones" class="boton">VER COLECCIONES</a>
             </div>
         </section>
-      
+
         <!--CARDS DE PRODUCTOS destacados-->
         <section class="productosDestacados">
             <h2>Productos Destacados</h2>
             <div class="galeriaDestacados">
                 <div class="tarjetaDestacados">
-                    <img src="./assets/img/producto.webp" alt="producto">
-                    <h3>Producto</h3>
-                    <h4>$2000.00</h4>
-                    <a href="">Agregar Carrito</a>
+                    <img src="./assets/img/Avengers_Vol_3_1.webp" alt="producto A">
+                    <h3>Vengadores</h3>
+                    <h4>$6000.00</h4>
+                    <a href="#" class="btn-agregar btn btn-primary" data-nombre="Producto A" data-precio="6000">Agregar al Carrito</a>
                 </div>
+
                 <div class="tarjetaDestacados">
-                    <img src="./assets/img/producto.webp" alt="producto">
-                    <h3>Producto</h3>
-                    <h4>$2000.00</h4>
-                    <a href="">Agregar Carrito</a>
+                    <img src="./assets/img/flash.jpg" alt="producto">
+                    <h3>Flash</h3>
+                    <h4>$5000.00</h4>
+                    <a href="#" class="btn-agregar btn btn-primary" data-nombre="Producto B" data-precio="5000">Agregar al Carrito</a>
                 </div>
+
                 <div class="tarjetaDestacados">
-                    <img src="./assets/img/producto.webp" alt="producto">
-                    <h3>Producto</h3>
-                    <h4>$2000.00</h4>
-                    <a href="">Agregar Carrito</a>
+                    <img src="./assets/img/linternaverde.jpg" alt="producto">
+                    <h3>Linterna Verde</h3>
+                    <h4>$3000.00</h4>
+                    <a href="#" class="btn-agregar btn btn-primary" data-nombre="Producto C" data-precio="3000">Agregar al Carrito</a>
                 </div>
+
                 <div class="tarjetaDestacados">
-                    <img src="./assets/img/producto.webp" alt="producto">
-                    <h3>Producto</h3>
-                    <h4>$2000.00</h4>
-                    <a href="">Agregar Carrito</a>
+                    <img src="./assets/img/deadpool.webp" alt="producto">
+                    <h3>Deadpool</h3>
+                    <h4>$4000.00</h4>
+                    <a href="#" class="btn-agregar btn btn-primary" data-nombre="Producto D" data-precio="4000">Agregar al Carrito</a>
                 </div>
+
+                <div class="tarjetaDestacados">
+                    <img src="./assets/img/bruja.jpg" alt="producto">
+                    <h3>Bruja Escarlata OFERTA</h3>
+                    <h4>$2000.00</h4>
+                    <a href="#" class="btn-agregar btn btn-primary" data-nombre="Producto E" data-precio="2000">Agregar al Carrito</a>
+                </div>
+
             </div>
-           
 
         </section>
-        <section class="marcasQueSeVenden">
-            <h2>Marcas que se venden</h2>
-            <a class="boton" href="./pages/productos.html">COMPRA LO QUE NECESITES</a>
-            <div class="galeriaMarcas">
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_excellent.png" alt="excellent">
-                    </a>
-                </div>
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_ferplast.png" alt="">
-                    </a>
-                </div>
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_proplan.png" alt="">
-                    </a>
-                </div>
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_puppis.png" alt="">
-                    </a>
-                </div>
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_royal.png" alt="">
-                    </a>
-                </div>
-                <div class="tarjetaMarcas">
-                    <a href="./pages/productos.html">
-                        <img src="./assets/img/marca_vitalcan.png" alt="">
-                    </a>
-                </div>
-            </div>
-          
+
+        <section id="comunidad" class="collection2">
+            <h2>Comunidad Solo Cómics</h2>
+            <p>SOLO Cómics es la primera y unica Comunidad de WhatsApp dedicada a los Cómics, el Coleccionismo y la Cultura Pop!! 🚀
+
+               
+                Nuestro objetivo principal es generar ese espacio de colaboración e interacción que nos hubiera gustado tener a nosotros mientras creciamos siendo maravillados por este hermoso y gigantezco mundo que abarca la cultura pop.
+                A diferencia de otros foros, nos destacamos por tener reglas perfectamente claras y tener la Comunidad administrada 24/7, lo que genera un ambiente libre de spam y permite el desarrollo pacífico de cada uno de los temas específicos en los grupos.
+                Unite ya a nuestros grupos temáticos e ingresá en debates copados, encontrá rarezas para comprar o mostrá tus tesoros coleccionables ¿Estás listo para compartir tu pasión?</p>
         </section>
-        <hr>
-        <!--reseñas de clientes-->
-        <section class="opinionClientes">
-            <h2>Nuestros Clientes hablan por Nosotros</h2>
-            <a class="boton" href="./pages/productos.html">CONSEGUI NUESTROS PRODUCTOS</a>
-            <div class="galeriaClientes">
-                <div class="tarjetaClientes">
-                    <img src="./assets/img/cliente_gato.png" alt="mascota">
-                    <h3>Nombre de la Mascota</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est, error possimus.</p>
-                </div>
-                <div class="tarjetaClientes">
-                    <img src="./assets/img/cliente_hamster.png" alt="mascota">
-                    <h3>Nombre de la Mascota</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est, error possimus.</p>
-                </div>
-                <div class="tarjetaClientes">
-                    <img src="./assets/img/cliente_perro.png" alt="mascota">
-                    <h3>Nombre de la Mascota</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est, error possimus.</p>
-                </div>
-                <div class="tarjetaClientes">
-                    <img src="./assets/img/cliente_pez.png" alt="mascota">
-                    <h3>Nombre de la Mascota</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus est, error possimus.</p>
-                </div>
-            </div>
-           
+
+        <section id="reseñas" class="collection3">
+            <h2>Reseñas de Cómics</h2>
+            <p>Opiniones de expertos sobre las mejores historias del universo del cómic.</p>
         </section>
+
         <section id="nosotros" class="nosotros">
             <h2>Nosotros</h2>
             <div class="contenedorNosotros">
-                <img class="imagen" src="./assets/img/petshop.jpg" alt="Imagen de frente del petshop">
+               <div class="uno">
+
+               </div>
                
-                
-               
-                <div class="nosotrosTexto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti fuga distinctio et eos delectus modi dolorum pariatur. Pariatur architecto ea aliquam, voluptatum suscipit aut. Illo ab officiis voluptate magni.</p>
-                    <a class="boton" href="./pages/contacto.html">CONTACTANOS</a>
-                </div>
+               <div class="dos">
+                <p>Mi nombre es Lucas Orellano, soy de Avellaneda, y esta página fue diseñada durante el curso de Front End dictada por talento tech</p>
+               </div>
             </div>
           
            
         </section>
-        
+
     </main>
+
     <footer class="footer">
         <a href="#">
-            <img class="logo" src="./assets/img/logo.png" alt="Logo Tienda de mascotas">
+            <img class="logo" src="./assets/img/logo.png.png" alt="Logo Solo Cómics">
         </a>
-       
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        <nav>
-            <ul>
-                <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="">Política de Privacidad</a></li>
-                <li><a href="">Términos y Condiciones</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#colecciones">Colecciones</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
             </ul>
         </nav>
         <nav>
             <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
         <div>
             <form action="">
                 <input type="email" placeholder="Tu correo electrónico" id="emailSus" name="emailSus">
                 <input type="submit" value="Suscribirse">
             </form>
         </div>
-        <!--datos de contacto, direccion y telefono-->
+
         <address>
-            <p>Dirección: Calle Falsa 123, Palermo, Ciudad de Buenos Aires</p>
-            <p>Teléfono: (55) 555-5555</p>
-            <p>Correo electrónico:  contacto@petshop.com</p>
+            <p>Dirección: Calle Falsa 123, Ciudad de Buenos Aires</p>
+            <p>Teléfono: 1234-5678</p>
+            <p>Email: contacto@solocomics.com</p>
         </address>
-       
         <div>
-            <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=5491140294836" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
         </div>
-        <p>2024 PetShop | Todos los derechos reservados</p>
     </footer>
+
+    <script src="./js/agregar_carrito.js"></script>
+
+ 
 </body>
 </html>
