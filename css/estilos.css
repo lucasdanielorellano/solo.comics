@@ -198,7 +198,72 @@ h1, h2, h3 {
     line-height: 1.8;
 }
 
+/* Estilos para la Sección de Reseñas */
+#reseñas {
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+    text-align: center;
+}
 
+#reseñas h2 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 2.5rem;
+    color: #FF6347;
+    text-shadow: 2px 2px 0px #FFD700;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial blockquote {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.testimonial cite {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    text-align: right;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .testimonial {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 300px;
+        margin: 0 10px 30px;
+    }
+}
 
 /* Sección Nosotros */
 .nosotros {
@@ -263,6 +328,60 @@ h1, h2, h3 {
     }
 }
 
+/* Galería */
+.galeria {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.galeria h2 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #FF6347;
+    text-shadow: 2px 2px 0px #FFD700;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor-galeria img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Diferenciar las galerías */
+#galeria-dc {
+    background-color: #1E1E1E; /* Oscuro para DC */
+}
+
+#galeria-dc h2 {
+    color: #00BFFF; /* Azul claro para DC */
+    text-shadow: 2px 2px 0px #ADD8E6;
+}
+
+#galeria-marvel {
+    background-color: #2C2C2C; /* Oscuro para Marvel */
+}
+
+#galeria-marvel h2 {
+    color: #FF4500; /* Naranja para Marvel */
+    text-shadow: 2px 2px 0px #FFD700;
+}
 
 /* Formulario de Contacto */
 .formularioContactoYMapa {
